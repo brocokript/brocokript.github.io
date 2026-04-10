@@ -1,0 +1,5 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Minimalist Shield: Just a clean, bold stroke with a subtle inner accent -->
+  <path d="M16 3L6 7.5V16C6 21.25 10.4 26.2 16 28C21.6 26.2 26 21.25 26 16V7.5L16 3Z" fill="#020617"/>
+  <path d="M16 7L9 10V16C9 19 16 23 16 23C16 23 23 19 23 16V10L16 7Z" fill="#10b981"/>
+</svg>

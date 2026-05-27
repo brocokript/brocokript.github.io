@@ -1,0 +1,109 @@
+﻿<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sección técnica — BrocoKript</title>
+  <meta name="description" content="Información técnica para usuarios avanzados de BrocoKript.">
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<header class="site-header dark-header">
+  <div class="container navbar">
+    <a class="brand" href="../index.html" aria-label="BrocoKript inicio">
+      <img class="brand-mark" src="../assets/img/logo.svg" alt="" width="34" height="34">
+      <span><span class="brand-name">BrocoKript</span><span class="brand-sub">Local encryption</span></span>
+    </a>
+    <nav class="nav-links" data-nav-links aria-label="Navegación principal">
+      <a class="" href="../index.html">Inicio</a>
+      <a class="" href="../software/index.html">Software</a>
+      <a class="" href="../interfaz/index.html">Interfaz</a>
+      <a class="" href="../versiones/index.html">Versiones</a>
+      <a class="" href="../descargar/index.html">Descargar</a>
+      <div class="nav-dropdown active">
+        <a class="nav-parent active" href="../tecnica/index.html">Nosotros</a>
+        <div class="nav-drop-panel">
+          <a class="active" href="../tecnica/index.html">Sección técnica</a>
+          <a class="" href="../legal/index.html">Aviso legal y privacidad</a>
+        </div>
+      </div>
+    </nav>
+    <div class="nav-actions">
+      <a class="btn btn-primary" href="../descargar/index.html">Descargar</a>
+      <button class="menu-btn" type="button" aria-label="Abrir menú" aria-expanded="false" data-menu-btn><span class="menu-lines"></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="contenido">
+  <section class="page-hero">
+    <canvas class="ambient-canvas" data-ambient-canvas aria-hidden="true"></canvas>
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="container">
+      <div class="breadcrumb"><a href="../index.html">Inicio</a><span>/</span><span>Sección técnica</span></div>
+      <span class="eyebrow"><span class="eyebrow-dot"></span>Para usuarios avanzados</span>
+      <h1>Detalles técnicos de la aplicación.</h1>
+      <p class="page-lead">Aquí encontrarás información más específica sobre el motor de cifrado, el comportamiento local y los límites de uso.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container legal-content">
+      <nav class="legal-nav" aria-label="Índice técnico">
+        <a href="#motor">Motor de cifrado</a>
+        <a href="#ejecucion">Ejecución local</a>
+        <a href="#flujo">Flujo de operación</a>
+        <a href="#limites">Límites conocidos</a>
+      </nav>
+
+      <article class="legal-doc reveal">
+        <h2 id="motor">Motor de cifrado</h2>
+        <p>El motor principal de BrocoKript está desarrollado en Rust. Se eligió este lenguaje por su enfoque en seguridad de memoria y rendimiento estable.</p>
+        <p>El software utiliza cifrado AES-256-GCM para proteger archivos.</p>
+        <p><a class="btn btn-outline" href="https://github.com/brocokript" target="_blank" rel="noopener">Ver código fuente del motor en Rust</a></p>
+
+        <h2 id="ejecucion">Ejecución local</h2>
+        <p>El cifrado y descifrado se ejecutan en el equipo del usuario. La aplicación no necesita enviar archivos para completar el flujo básico.</p>
+
+        <h2 id="flujo">Flujo de operación</h2>
+        <ul>
+          <li>Selección del archivo o carpeta.</li>
+          <li>Ejecución de cifrado o descifrado con clave definida por el usuario.</li>
+          <li>Registro local de estado para revisar resultados.</li>
+        </ul>
+
+        <h2 id="limites">Límites conocidos</h2>
+        <ul>
+          <li>La versión Community está orientada a uso manual y con límites operativos.</li>
+          <li>No existe recuperación de claves perdidas.</li>
+          <li>Ningún software puede garantizar seguridad al 100% en todos los contextos y entornos.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="footer-brand" href="../index.html"><img class="brand-mark" src="../assets/img/logo.svg" alt="" width="34" height="34">BrocoKript</a>
+        <p style="max-width:340px;color:#94a3b8;margin-top:14px">Software de cifrado y descifrado local para Windows.</p>
+      </div>
+      <div class="footer-col"><h4>Software</h4><a href="../software/index.html">Qué hace</a><a href="../interfaz/index.html">Interfaz</a><a href="../descargar/index.html">Descargar</a></div>
+      <div class="footer-col"><h4>Versiones</h4><a href="../versiones/index.html">Community</a><a href="../versiones/index.html">Pro</a><a href="../versiones/index.html">Tabla de funciones</a></div>
+      <div class="footer-col"><h4>Nosotros</h4><a href="../tecnica/index.html">Sección técnica</a><a href="../legal/index.html">Aviso legal y privacidad</a><a href="https://t.me/brocokript" target="_blank" rel="noopener">Comunidad Telegram</a></div>
+      <div class="footer-col"><h4>Contacto</h4><a href="../contacto/index.html">Canales de contacto</a><a href="https://t.me/brocokript" target="_blank" rel="noopener">Canal oficial</a><a href="../descargar/index.html#faq">Preguntas frecuentes</a></div>
+    </div>
+    <div class="footer-copy"><span>© <span data-year></span> BrocoKript. Todos los derechos reservados.</span><span>Web estática · HTML, CSS y JavaScript separados</span></div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js" defer></script>
+</body>
+</html>
+
+
+
